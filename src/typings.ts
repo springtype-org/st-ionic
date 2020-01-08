@@ -4,7 +4,7 @@ import { IElement } from "springtype/web/vdom/interface";
 declare global {
   export namespace JSX {
     export interface Clickable {
-      onClick: () => Promise<void>;
+      onClick: (e: MouseEvent) => any;
     }
 
     export interface IntrinsicElements extends IonicJSX.IntrinsicElements {
